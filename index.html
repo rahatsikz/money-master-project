@@ -29,37 +29,67 @@
                 <div class="input-area">
                   <h4 class="mb-3">Income</h4>
                   <label for="">&nbsp;Income:</label>
-                  <input type="text" name="" id="" class="mb-3 px-2" />
+                  <input
+                    type="text"
+                    name=""
+                    id="income-input"
+                    class="mb-3 px-2"
+                  />
                   <h4 class="mb-3">Expenses</h4>
                   <label for="">&nbsp;&nbsp;&nbsp;&nbsp;Food:</label>
-                  <input type="text" name="" id="" class="mb-3 px-2" />
+                  <input
+                    type="text"
+                    name=""
+                    id="food-input"
+                    class="mb-3 px-2"
+                  />
                   <br />
 
                   <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rent:</label>
-                  <input type="text" name="" id="" class="mb-3 px-2" />
+                  <input
+                    type="text"
+                    name=""
+                    id="rent-input"
+                    class="mb-3 px-2"
+                  />
                   <br />
 
                   <label for="">Clothes:</label>
-                  <input type="text" name="" id="" class="mb-3 px-2" />
+                  <input
+                    type="text"
+                    name=""
+                    id="cloth-input"
+                    class="mb-3 px-2"
+                  />
                   <br />
-                  <button class="btn btn-primary px-5 py-2" type="submit">
+                  <button
+                    id="btn-calculate"
+                    class="btn btn-primary px-5 py-2"
+                    type="submit"
+                  >
                     Calculate
                   </button>
                 </div>
                 <div class="output-area mt-4">
-                  <h4>Total Expenses: 5500</h4>
-                  <h4>Balance: 4500</h4>
+                  <h4>Total Expenses: <span id="expense-output"></span></h4>
+                  <h4>Balance: <span id="balance-output"></span></h4>
                 </div>
                 <div class="saving-area mt-4">
                   <!-- savings area  -->
                   <label for="">Save:</label>
                   <input type="text" name="" id="saving-input" class="px-2" />
                   <span>%</span>
-                  <button class="btn btn-primary px-5 py-1" type="submit">
+                  <button
+                    id="btn-save"
+                    class="btn btn-primary px-5 py-1"
+                    type="submit"
+                  >
                     Save
                   </button>
-                  <h4 class="mt-4">Saving Amount: 2000</h4>
-                  <h4>Remaining Balance: 2500</h4>
+                  <h4 class="mt-4">
+                    Saving Amount: <span id="saving-output"></span>
+                  </h4>
+                  <h4>Remaining Balance: <span id="remaining"></span></h4>
                 </div>
               </div>
             </div>
@@ -69,5 +99,6 @@
     </main>
     <!-- js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/calculation.js"></script>
   </body>
 </html>

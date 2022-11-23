@@ -15,7 +15,6 @@ input {
   outline: none;
   border: none;
 }
-label,
-span {
+label {
   font-size: 18px;
 }
